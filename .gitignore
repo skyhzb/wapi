@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 
 session_auth_info
+
+package-lockNew.json
+packageNew.json
+packageOld.json
