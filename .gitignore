@@ -24,7 +24,8 @@ dist-ssr
 *.sw?
 
 session_auth_info
-
+wa.php
+doc.md
 package-lockNew.json
 packageNew.json
 packageOld.json

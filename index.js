@@ -128,16 +128,27 @@ async function connectToWhatsApp() {
                 quoted: messages[0],
               }
             );
-          } else {
+          } else if (compareMessage === "hi") {
             await sock.sendMessage(
               numberWa,
               {
-                text: "This is Autoreply I will message you soon",
+                text: "hello",
               },
               {
                 quoted: messages[0],
               }
             );
+          } else {
+            // await sock.sendMessage(
+            //   numberWa,
+            //   {
+            //     text: "This is Autoreply I will message you soon",
+            //   },
+            //   {
+            //     quoted: messages[0],
+            //   }
+            // );
+            console.log("Got new message from: ", numberWa);
           }
         }
       }
